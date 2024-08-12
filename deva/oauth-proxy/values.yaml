@@ -1,0 +1,18 @@
+config:
+  clientID:
+  clientSecret:
+  cookieSecret:
+  configFile: |
+    email_domains = [ "*" ]
+    upstreams = [ "file:///dev/null" ]
+    provider = "github"
+extraArgs:
+  github-user: ""
+  cookie-expire: 30s
+  cookie-domain:
+ingress:
+  enabled: true
+  path: /oauth2
+  pathType: Prefix
+  hosts:
+    -

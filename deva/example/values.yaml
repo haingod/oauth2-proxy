@@ -1,0 +1,6 @@
+ingress:
+  hosts:
+    - host:
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
